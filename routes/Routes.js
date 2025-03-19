@@ -13,7 +13,8 @@ const {likedUser} = require("../controllers/likedStudents")
 const {unlikedUser} = require("../controllers/likedStudents")
 const {commentedStudent } = require("../controllers/commentStudent")
 const {contact} = require("../controllers/contact")
-
+const {localFileUpload} = require("../controllers/file")
+const {imageUpload} = require('../controllers/file')
 
 router.post("/signUp",signUp)
 router.post("/signIn",signIn)
@@ -27,6 +28,8 @@ router.post("/likedUser",likedUser)
 router.post("/unlikedUser",unlikedUser)
 router.post("/commentedStudent",commentedStudent)
 router.post("/contact",contact)
+router.post("/localFileUpload",localFileUpload)
+router.post("/imageUpload" , imageUpload)
 
 
 module.exports = router
